@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card.js";
+import Card from "./Card.js/index.js";
 import InfoTeam from "./InfoTeam";
 function Section() {
     function mapping(arr) {
