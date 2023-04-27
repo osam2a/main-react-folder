@@ -1,6 +1,5 @@
 const InfoTeam = [
   {
-    id: null,
     firstName: "osama",
     lastName: "youssef",
     email: "osama0.syria@gmail.com",
@@ -9,7 +8,6 @@ const InfoTeam = [
   },
 
   {
-    id: null,
     firstName: "hamza",
     lastName: "dandan",
     email: "osama0.syria@gmail.com",
@@ -18,7 +16,6 @@ const InfoTeam = [
   },
 
   {
-    id: null,
     firstName: "goorje",
     lastName: "alnajjar",
     email: "georgenajjar77@gmail.com",
