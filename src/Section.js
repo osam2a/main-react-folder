@@ -8,6 +8,7 @@ function Section() {
     const resault = arr.map(function (item) {
       return (
         <Card
+          key={item.id}
           firstName={item.firstName}
           lastName={item.lastName}
           email={item.email}
