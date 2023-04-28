@@ -2,9 +2,18 @@ import React from "react";
 import Card from "./Card.js";
 import InfoTeam from "./InfoTeam";
 function Section() {
+  let getAge = (dateString) => {
+    let today = new Date();
+    let birthDate = new Date(dateString);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    let m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  };
 
-  
-  function mapping(arr) {
+  let mapping = (arr) => {
     const resault = arr.map(function (item) {
       return (
         <Card
@@ -14,11 +23,12 @@ function Section() {
           email={item.email}
           tel={item.tel}
           img={item.img}
+          age={getAge(item.age)}
         />
       );
     });
     return resault;
-  }
+  };
 
   console.log(`this Array`, mapping(InfoTeam));
   return (
