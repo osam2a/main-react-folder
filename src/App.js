@@ -1,12 +1,11 @@
 import React from "react";
-import Header from "./Header";
-import Section from './Section';
+import Header from "./compoent/Header";
+import Section from './compoent/Section';
 import "./App.css";
-
 function App() {
   return (
     <>
-      <div className="bg-red-900">
+      <div className="bg-cyan-100  font-serif	">
         <React.StrictMode>
           <Header />
           <Section />

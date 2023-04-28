@@ -1,5 +1,5 @@
 const Style = {
-  box:``,
+  box: ``,
   header: `flex 
            flex-shrink 
            justify-evenly 
@@ -7,7 +7,6 @@ const Style = {
            gap-2 
            p-2`,
 
-           
   links: `  text-primary 
             transition 
             duration-150 
@@ -25,10 +24,10 @@ const Style = {
         rounded-md`,
 
   contenierPic: {
-    box: `w-9 h-9 rounded-full inline-block overflow-hidden bg-gray-700`,
+    box: `w-12 h-12 flex justify-center items-center rounded-full  overflow-hidden bg-gray-700`,
     img: `block w-full`,
   },
 
-  tLgW: `text-lg text-black`,
+  tLgW: `text-2xl text-balck font-bold `,
 };
 export default Style;
