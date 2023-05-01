@@ -15,18 +15,19 @@ function Section() {
 
   let regularExpressions = (text) => {
     const moudelWords =
-      /html\d? |css|js|java script|javascript|sass|react.js|python|ts|type script|next.js|mysql/gim;
-    const matchmoudel = text.match(moudelWords);
-    // return text.replaceAll(moudelWords,`<span className="text-red-300">${moudelWords}</span>`)
-    let resault = matchmoudel.map((ele) => {
-      let varibal= text.replace(
-        ele,
-        `<span className="text-red-300">${ele}</span>`
+      /html\d? |css|js|java script|javascriptsass|react.js|python|ts|type script|next.js|mysql/gim;
+    let matchMoudel = text.match(moudelWords);
+    return (
+          <p>
+            {matchMoudel.split(" ").map((ele) => {
+              return (
+                <span style={{ color: 'red' , display: "inline" }}>
+                  {ele} &nbsp;
+                </span>
+              );
+            })}
+          </p>
         );
-       
-    });
-    console.log(matchmoudel);
-    return resault;
   };
 
   let mapping = (arr) => {

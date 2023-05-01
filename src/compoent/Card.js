@@ -1,10 +1,40 @@
 import React from "react";
 // import Style from "./Style";
 // import Details from "./Details";
+// const getRandomColor = () => {
+//   const colors = ["red", "orange", "green", "blue"];
+//   return colors[Math.floor(Math.random() * colors.length)];
+// };
+
+// const ColorPara = (props) => {
+//   return (
+//     <p>
+//       {props.children.split(" ").map((text) => {
+//         return (
+//           <p style={{ color: getRandomColor(), display: "inline" }}>
+//             {text} &nbsp;
+//           </p>
+//         );
+//       })}
+//     </p>
+//   );
+// };
+
+
 function Card(props) {
+  //For changing on interval
+  //-------------------------
+  // const [count, setCount] = useState(0);
+
+  // setInterval(() => {
+  //   let newCount = count + 1;
+  //   setCount(newCount);
+  // }, 2000);
+  // //--------------------------
+
   return (
     <>
-      <div className="max-w-lg- w-1/2 rounded-2xl border-2 border-sky-500 overflow-hidden lg:max-w-full lg:flex">
+      <div className="Card max-w-lg- w-1/2 rounded-2xl border-2 border-sky-500 overflow-hidden lg:max-w-full lg:flex">
         <div
           className={`
             h-full w-full  rounded-t text-center overflow-hidden flex-none
@@ -31,10 +61,11 @@ function Card(props) {
               {props.jop}
             </div>
 
-            <p className="text-gray-700 text-base">{props.bio}</p>
+            <p className="  text-base">{props.bio}</p>
+
             <div className=" flex flex-col justify-center text-sm ">
-              {props.tel !== null ? <a>TEL :{props.tel}</a> : ""}
-              {props.email !== null ? <a>Email : {props.email}</a> : ""}
+              {props.tel !== null ? <a href="f" >TEL :{props.tel}</a> : ""}
+              {props.email !== null ? <a  href="f"> Email : {props.email}</a> : ""}
             </div>
           </div>
 
@@ -59,3 +90,4 @@ function Card(props) {
 }
 
 export default Card;
+
