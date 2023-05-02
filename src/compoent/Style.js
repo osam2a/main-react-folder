@@ -24,7 +24,7 @@ const Style = {
         rounded-md`,
 
   contenierPic: {
-    box: `w-12 h-12 flex justify-center items-center rounded-full  overflow-hidden bg-gray-700`,
+    box: `w-16 h-16 flex justify-center items-center rounded-full  overflow-hidden bg-gray-700`,
     img: `block w-full`,
   },
 

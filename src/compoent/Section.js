@@ -12,34 +12,17 @@ function Section() {
     }
     return age;
   };
-
-  let regularExpressions = (text) => {
-    const moudelWords =
-      /html\d? |css|js|java script|javascriptsass|react.js|python|ts|type script|next.js|mysql/gim;
-    let matchMoudel = text.match(moudelWords);
-    return (
-          <p>
-            {matchMoudel.split(" ").map((ele) => {
-              return (
-                <span style={{ color: 'red' , display: "inline" }}>
-                  {ele} &nbsp;
-                </span>
-              );
-            })}
-          </p>
-        );
-  };
-
   let mapping = (arr) => {
     const resault = arr.map(function (item) {
+      
       return (
         <Card
-          key={item.id}
+          id={item.id}
           firstName={item.firstName}
           lastName={item.lastName}
           age={getAge(item.age)}
           jop={item.jop}
-          bio={regularExpressions(item.bio)}
+          bio={item.bio}
           email={item.email}
           tel={item.tel}
           img={item.img}

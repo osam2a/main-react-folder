@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./compoent/Header";
 import Section from './compoent/Section';
+
 import "./App.css";
 function App() {
   return (
